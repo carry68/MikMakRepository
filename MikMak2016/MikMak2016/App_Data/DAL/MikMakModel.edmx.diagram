@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6b01c9db0d90427a986f1142fb33f13a" Name="Diagram1" ZoomLevel="81">
+        <EntityTypeShape EntityType="MikMak2016Model.Article" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikMak2016Model.ArticleType" Width="1.5" PointX="0.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikMak2016Model.ProductArticle" Width="1.5" PointX="5.625" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikMak2016Model.Supplier" Width="1.5" PointX="8.125" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikMak2016Model.UnitBase" Width="1.5" PointX="10.75" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="MikMak2016Model.FK_Article_ArticleType" ManuallyRouted="false" />
+        <AssociationConnector Association="MikMak2016Model.FK_Article_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="MikMak2016Model.FK_Article_UnitBase" ManuallyRouted="false" />
+        <AssociationConnector Association="MikMak2016Model.FK_ProductArticle_Article" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

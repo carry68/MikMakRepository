@@ -1,0 +1,74 @@
+﻿@model MikMak2016.App_Data.DAL.ProductArticle
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProductArticle</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdProduct)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdProduct)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InsertedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InsertedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InsertedOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InsertedOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Article.Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Article.Number)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

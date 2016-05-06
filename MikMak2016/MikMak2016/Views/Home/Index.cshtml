@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Mik Mak 2016</h1>
+   
+</div>
+
+<div class="row">
+    <button type="button" onclick="window.location(href='@Url.Action("Index", "Article")')">
+        Article
+    </button>
+    <button type="button" onclick="window.location(href='@Url.Action("Index", "ArticleType")')">
+        Type d'article
+    </button>
+    <button type="button" onclick="window.location(href='@Url.Action("Index", "UnitBase")')">
+        Unité de base
+    </button>
+    <button type="button" onclick="window.location(href='@Url.Action("Index", "Supplier")')">
+        Fournisseur
+    </button>
+</div>
