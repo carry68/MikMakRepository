@@ -1,0 +1,28 @@
+Enter file contents here
+// code voor de button wanneer articletype == "PF"
+
+   <div class="form-group">
+            @Html.LabelFor(model => model.IdArticleType, "ArticleType", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Articletype", ViewBag.IdArticleType as SelectList, "..Select an articletype", new { @onchange = "GetCollect(this)" })
+                @Html.ValidationMessageFor(model => model.IdArticleType) 
+
+                <input id="collect" type="hidden" name="collect" />
+                
+<script type="text/javascript" >
+    function GetCollect(element)
+    {
+        // var selectedText = element.options[element.selectedIndex].innerHTML;
+        var selectedValue = element.value;
+
+        if ( selectedValue == 8)
+        {   
+            var btn = document.getElementById("collect");
+            btn.setAttribute("type", "button");
+            btn.setAttribute("value", "Collect Products");
+            btn.setAttribute("onclick", "window.location(href='@Url.Action("Collect", "Article")')");
+        }
+    }
+     </script>
+            </div>
+        </div>
